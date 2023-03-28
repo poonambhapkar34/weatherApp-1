@@ -1,0 +1,35 @@
+.all-content{
+  height: 90vh;
+  width: 24vw;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Courgette', cursive;
+}
+
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bg-cold{
+    background-image:url('../../assets/snowy.jpg');
+    // background-image:url('../../assets/Sunny.jpg');
+    background-size: 100%;
+    height: 100%;
+  }
+  .bg-hot{
+    background-image:url('../../assets/Sunny.jpg');
+    background-size: 100%;
+    height: 100%;
+  }
+
+  .not-found{
+    background-image:url('../../assets/city-404\(1\).jpg');
+    background-size: 100%;
+    height: 100%;
+  }
+
+  .not-entered{
+    background-image:url('../../assets/enter-city\(1\).jpg');
+    background-size: 100%;
+    height: 100%;
+  }
