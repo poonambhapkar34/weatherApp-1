@@ -1,8 +1,18 @@
 .all-content{
-  height: 90vh;
-  width: 24vw;
+  height: 80vh; 
+  width: 22vw;
   font-family: 'Barlow', sans-serif;
   font-family: 'Courgette', cursive;
+  margin: auto;
+  top: 20px;
+  position: relative;
+  border-radius: 23px;
+  box-shadow: 13px 13px 14px red;
+}
+.main{
+  height: 60%; 
+  border: 2px solid rgb(238, 51, 14);
+  border-radius: 15px;
 }
 
 .dialog-title {
@@ -14,22 +24,73 @@
     background-image:url('../../assets/snowy.jpg');
     // background-image:url('../../assets/Sunny.jpg');
     background-size: 100%;
-    height: 100%;
+    height: 80%;
   }
   .bg-hot{
     background-image:url('../../assets/Sunny.jpg');
     background-size: 100%;
-    height: 100%;
+    height:80%;
   }
 
   .not-found{
     background-image:url('../../assets/city-404\(1\).jpg');
     background-size: 100%;
-    height: 100%;
+    height: 80%;
   }
 
   .not-entered{
     background-image:url('../../assets/enter-city\(1\).jpg');
     background-size: 100%;
-    height: 100%;
+    height: 80%;
   }
+  .parent-container{
+    border: 1px solid red;
+    position: relative;
+    left: 30px;
+    top: 0px;
+    width: 121px;
+    height: 50px;
+    padding: 6px 8px;
+    text-align: center;
+  }
+  .parent-container1{
+    border: 1px solid red;
+    position: absolute;
+    top: 85px;
+    left: 171px;
+    height: 50px;
+    width: 122px;
+    background-color: aquamarine;
+  }
+  .ftr{
+    position: fixed;
+    bottom: 0px;
+    border: 1px solid red;
+    width: 100%;
+    background-color: cornflowerblue;
+    height: 47px;
+  }
+  .temp{
+    display: inline;
+  }
+  .temp2{
+    display: none;
+  }
+
+  .cl1 .cl2.cl3 .cl4{
+    color: red;
+  }
+  .inpt{
+    width: 150px;
+    position: relative;
+    top: 14px;
+    margin: auto;
+  }
+    .respo {
+      height: 30%;
+      border-radius: 15px;
+      box-sizing: border-box;
+      border: 2px solid red;
+      margin-top: 9px;
+    }
+

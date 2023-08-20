@@ -1,24 +1,44 @@
 
-<div class="text-center p-2 all-content" [ngClass]="cityNotFound()" style="height: 90vh; width: 24vw;font-family: 'Barlow', sans-serif;font-family: 'Courgette', cursive;">
-  <div style="height: 70%; border: 0.0001px solid rgb(253, 151, 131); border-radius: 15px;">
-    <input class="form-control" type="search" placeholder="Search" aria-label="Search"
-    style="width: 250px; margin: 10px 28px;" [(ngModel)]="searchedValue">
+<div class="text-center p-2 all-content" [ngClass]="cityNotFound()">
+  <div class="main">
+    <input class="form-control inpt" type="search" placeholder="Search...." 
+     [(ngModel)]="searchedValue">
     <h3 *ngIf="okResponse" class="mt-4 text-white">{{responseCity | titlecase}}</h3>
-    <h2 *ngIf="okResponse" class="mt-5 text-white" style="font-size: 70px;">{{temperature | number:'1.0-0'}}°C</h2>
+    <h2 *ngIf="okResponse" class="mt-5 text-white" style="font-size: 60px;">{{temperature | number:'1.0-0'}}°C</h2>
     <h3 *ngIf="!okResponse && searchedValue" class="mt-5 text-danger">City not found</h3>
     <h3 *ngIf="!searchedValue" class="mt-5 text-danger">Enter city name</h3>
   </div>
 
-  <div *ngIf="okResponse" class="text-white" style="height: 30%; border-right: 0.0001px solid white;border-left: 0.0001px solid white; border-radius: 15px;box-sizing: border-box; border-bottom: 0.0001px solid white;border-top: 0.0001px solid rgb(253, 151, 131);">
+  <div *ngIf="okResponse" class="text-white respo" >
     <div class="mt-4">
-      <span><img src="../../assets/hot-temp.png" alt="" height="40px"></span>
+      <span><img [src]="wImg" height="30" width="20"></span>
       <span class="ms-3 me-5 fs-6">{{max_temp | number:'1.0-2'}}°C</span>
-      <span class="ms-3"><img src="../../assets/cold-temp.png" alt="" height="40px"></span>
+      <span class="ms-3"><img src="../../assets/cold-temp.png"  height="40"></span>
       <span class="ms-3 fs-6">{{min_temp | number:'1.0-2'}}°C</span>
     </div>
     <div class="mt-4">
-      <span><img src="../../assets/humidity.png" alt="" height="40px"></span><span class="ms-3 me-3 fs-6">{{humidity}}%</span>
-      <span class="ms-5"><img src="../../assets/wind.png" alt="" height="40px"></span><span class="ms-3 fs-6">{{windSpeed}} mps</span>
+      <span><img src="../../assets/humidity.png" height="40"></span><span class="ms-3 me-3 fs-6">{{humidity}}%</span>
+      <span class="ms-5"><img src="../../assets/wind.png"  height="40"></span><span class="ms-3 fs-6">{{windSpeed}} mps</span>
     </div>
   </div>
 </div>
+
+<!-- <div class="parent-container">
+  dvbhdvbj
+</div>
+<div  class="parent-container1">
+  ghghg
+</div>
+<div [class.temp2]="temperature >= 20" [class.temp]="temperature < 20">
+  {{temperature}}
+</div>
+<div class="cl1" >
+  <div class="cl2 cl3">
+    <div class="cl4">
+      gvfdvfvf
+    </div>
+  </div>
+</div>
+<span class="parent-containe2r">  gregvreg</span>
+<span class="parent-container3">  ghththeregvreg</span> 
+<div class="ftr"> footer</div> -->

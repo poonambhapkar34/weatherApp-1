@@ -16,7 +16,7 @@ export class MainContentComponent {
   humidity!: number;
   windSpeed!: number;
   responseCity!: string;
-  
+  wImg = "../../assets/hot-temp.png"
   _searchedValue = 'mumbai';
   get searchedValue(){
     return this._searchedValue;
@@ -38,6 +38,8 @@ export class MainContentComponent {
     this.weatherService.getAllWeatherData().subscribe((data)=>{
       console.log(data);
       this.okResponse = data;
+      console.log('data',data);
+      
       this.temperature = this.okResponse.main.temp;
       this.max_temp = this.okResponse.main.temp_max;
       this.min_temp = this.okResponse.main.temp_min;
